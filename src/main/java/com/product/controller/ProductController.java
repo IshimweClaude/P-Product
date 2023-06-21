@@ -49,7 +49,6 @@ public class ProductController {
 	// create user 
 	
 	@PostMapping("/register")
-	
 	public Product createUser(@RequestBody Product product) {
 		
 		return this.productRepository.save(product);
